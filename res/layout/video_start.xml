@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/all_background"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/selector_public_btn_bg_yellow"
+        android:text="上传视频"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/selector_public_btn_bg_yellow"
+        android:text="视频列表"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/action1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/selector_public_btn_bg_yellow"
+        android:text="活动"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/action2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/selector_public_btn_bg_yellow"
+        android:text="资料"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/action3"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/selector_public_btn_bg_yellow"
+        android:text="发布"
+        android:textColor="@color/white" />
+
+</LinearLayout>

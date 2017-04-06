@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 加载条样式 -->
+    <style name="progress">
+        <item name="android:indeterminateDrawable">@drawable/selector_public_progress_dialog</item>
+        <item name="android:minWidth">22dip</item>
+        <item name="android:maxWidth">22dip</item>
+        <item name="android:minHeight">22dip</item>
+        <item name="android:maxHeight">22dip</item>
+    </style>
+    <!-- 加载弹出框 -->
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- 加载自定义弹出框 -->
+    <style name="AppBaseTheme" parent="android:Theme.Light" />
+
+    <style name="AppTheme" parent="AppBaseTheme" />
+
+    <!-- title bar -->
+    <style name="title_bar_button">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:paddingRight">15.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <!-- line -->
+    <style name="line">
+        <item name="android:background">@drawable/pic_xline</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dip</item>
+    </style>
+
+    <!-- line -->
+    <style name="line_br">
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MediaController_SeekBar">
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+        <item name="android:progressDrawable">@drawable/mediacontroller_seekbar</item>
+        <item name="android:thumb">@drawable/mediacontroller_seekbar_thumb</item>
+    </style>
+
+    <style name="MediaController_Text">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Video Recorder -->
+    <style name="filler_10dip">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">10dip</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="filler_5dip">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">5dip</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="btn_bottommenu">
+        <item name="android:layout_height">40dip</item>
+        <item name="android:layout_width">200dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:textSize">12dip</item>
+    </style>
+
+    <style name="filler_15dip">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">15dip</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <!-- 支付宝 -->
+    <style name="translucent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light" />
+
+    <style name="AppTheme" parent="AppBaseTheme" />
+
+    <style name="AlertDialog" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/popup_bg</item>
+    </style>
+
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- 黑色 -->
+    <color name="black">#ff000000</color>
+    <!-- 白色 -->
+    <color name="white">#ffffffff</color>
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+
+    <!-- 页头    文字背景颜色 -->
+    <color name="bar_background">#ffffff</color>
+    <!-- 页面            背景颜色 -->
+    <color name="all_background">#fee2ca</color>
+
+    <!-- 列表默认    背景颜色 -->
+    <color name="list_color">#FFCC99</color>
+    <!-- 列表点击    背景颜色 -->
+    <color name="list_click_color">#FF9933</color>
+
+    <!-- Button默认    背景颜色 -->
+    <color name="button_color">#FFCC99</color>
+    <!-- Button点击    背景颜色 -->
+    <color name="button_click_color">#FF9933</color>
+    <!-- 表单颜色 -->
+    <color name="form_color">#fbc879</color>
+
+    <!-- 默认文字颜色 -->
+    <color name="text_color">#f2ad5a</color>
+    <!-- Key文字颜色 -->
+    <color name="text_key_color">#ffffffff</color>
+    <!-- Value时文字颜色 -->
+    <color name="text_value_color">#ffffffff</color>
+    <!-- 暗示时文字颜色 -->
+    <color name="text_input_hint_color">#f2ad5a</color>
+    <!-- 按钮上的文字颜色 -->
+    <color name="text_btn_color">#ffffffff</color>
+
+    <!-- 支付宝 -->
+    <color name="TextColorBlack">#FF000000</color>
+    <color name="TextColorWhite">#FFFFFFFF</color>
+    <color name="TextColorGray">#FF505050</color>
+    <color name="ToastBgColor">#FF424242</color>
+    <color name="btnColor">#FFFFFF</color>
+    <color name="textColorforItemTitle">#FF666666</color>
+    <color name="secondbtntextColor">#FF496ea3</color>
+    <color name="textColorforCheckBox">#FF333333</color>
+    <color name="bgColor">#FFF2F2F2</color>
+    <color name="downLoadTextNomal">#FF3366CC</color>
+    <color name="downLoadTextPressed">#FFFFFFFF</color>
+    <color name="downLoadBackNomal">#FFFFFFFF</color>
+    <color name="downLoadBackFocus">#FF6698E7</color>
+    <color name="downLoadBackPressed">#FF3366CC</color>
+    <color name="dialog_tiltle_blue">#2277BB</color>
+
+</resources>

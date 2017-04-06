@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/all_background"
+    android:orientation="vertical" >
+
+    <com.allen.music.views.widget.RefreshListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/all_background"
+        android:divider="#cbcbcb"
+        android:dividerHeight="0.5px"
+        android:fadingEdge="none"
+        android:scrollbarThumbVertical="@drawable/public_scrollbar_handle_vertical" />
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/all_background"
+    android:padding="10dp" >
+
+    <EditText
+        android:id="@+id/set_password_e1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/selector_public_form_color_middle"
+        android:ems="10"
+        android:gravity="center_vertical|right"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:paddingBottom="3dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/text_value_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/set_password_e1"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="手机号码："
+        android:textColor="@color/text_key_color"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_below="@+id/set_password_e1"
+        android:background="@color/text_key_color" />
+
+    <EditText
+        android:id="@+id/set_password_e2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/line1"
+        android:background="@drawable/selector_public_form_color_middle"
+        android:ems="10"
+        android:gravity="center_vertical|right"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/text_value_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/set_password_e2"
+        android:layout_below="@+id/line1"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="新密码："
+        android:textColor="@color/text_key_color"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_below="@+id/set_password_e2"
+        android:background="@color/text_key_color" />
+
+    <EditText
+        android:id="@+id/set_password_e3"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/line2"
+        android:background="@drawable/selector_public_form_color_middle"
+        android:ems="10"
+        android:gravity="center_vertical|right"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp"
+        android:textColor="@color/text_value_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/set_password_e3"
+        android:layout_below="@+id/line2"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="确认密码："
+        android:textColor="@color/text_key_color"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/set_password_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_password_e3"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/selector_public_btn_bg_yellow"
+        android:text="确　定"
+        android:textColor="@color/text_btn_color"
+        android:textSize="15sp" />
+
+</RelativeLayout>

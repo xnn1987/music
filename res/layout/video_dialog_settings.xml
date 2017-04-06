@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip" >
+
+            <TextView
+                android:id="@+id/dialog_settings_num_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:visibility="gone" />
+
+            <View style="@style/filler_15dip" />
+
+            <TextView
+                android:id="@+id/dialog_settings_encoding_format_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Encoder:"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/dialog_settings_encoding_format_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/dialog_settings_name_container_format_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Container:"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/dialog_settings_container_format_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/dialog_settings_name_mute_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Mute:"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/dialog_settings_mute_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true" 
+                 android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/dialog_settings_name_spliter_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Splitter:"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/dialog_settings_splitter_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true" 
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/dialog_settings_name_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="时长"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:visibility="visible" />
+
+            <Spinner
+                android:id="@+id/dialog_settings_time_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true" />
+            <TextView
+                android:id="@+id/dialog_settings_name_resolution_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="分辨率"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:visibility="visible" />
+
+            <Spinner
+                android:id="@+id/dialog_settings_resolution_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true" />
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dip" >
+
+                <TableRow android:gravity="center_horizontal" >
+
+                    <Button
+                        android:id="@+id/dialog_settings_btn1"
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                        android:text="更新" />
+
+                    <Button
+                        android:id="@+id/dialog_settings_btn2"
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                        android:text="取消" />
+                </TableRow>
+            </TableLayout>
+
+            <View style="@style/filler_15dip" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/selector_public_list_item_bgground"
+    android:padding="7dp" >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:padding="2dp"
+        android:src="@drawable/user_icon_bg" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/image"
+        android:ellipsize="end"
+        android:text="参赛曲目名"
+        android:textColor="@color/text_color"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/t1"
+        android:layout_centerVertical="true"
+        android:text="参赛人员名"
+        android:textColor="@color/text_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image"
+        android:layout_alignLeft="@+id/t2"
+        android:text="推荐老师：张老师"
+        android:textColor="@color/text_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/t3"
+        android:layout_alignBottom="@+id/t3"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="2"
+        android:textColor="@color/text_color"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/b5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/t4"
+        android:layout_toLeftOf="@+id/t4"
+        android:background="@drawable/button_bg_zan"
+        android:focusable="false" />
+
+</RelativeLayout>

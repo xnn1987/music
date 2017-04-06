@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/all_background"
+    android:gravity="center"
+    android:orientation="horizontal" 
+    android:padding="10dp">
+
+    <!-- android:background="@drawable/button_titlebar_two_right" -->
+    <!-- android:background="@drawable/button_titlebar_two_left" -->
+
+    <Button
+        android:id="@+id/tab_btn_type_1"
+        android:layout_width="120.0dip"
+        android:layout_height="40.0dip"
+        android:background="@drawable/selector_public_btn_color_yellow"
+        android:gravity="center"
+        android:text="最新动态"
+        android:textColor="@color/text_btn_color"
+        android:textSize="14.0sp" />
+
+    <View
+        android:layout_width="0.1px"
+        android:layout_height="30.0dip"
+        android:background="@drawable/pic_xline" />
+
+    <Button
+        android:id="@+id/tab_btn_type_2"
+        android:layout_width="120.0dip"
+        android:layout_height="40.0dip"
+        android:background="@drawable/selector_public_btn_color_yellow"
+        android:gravity="center"
+        android:text="参赛组别"
+        android:textColor="@color/text_btn_color"
+        android:textSize="14.0sp" />
+
+</LinearLayout>

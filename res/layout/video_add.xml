@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_background"
+    android:padding="10dp" >
+
+    <ScrollView
+        android:id="@+id/img_videorecord"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linear_videorecord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/selector_public_form_border_bottom"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_public_form_border_top" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dip"
+                        android:layout_marginBottom="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/market_car" />
+
+                    <ImageView
+                        android:id="@+id/img_videorecorder"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="center"
+                        android:src="@drawable/bg_video_recorder" />
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_videorecord_again"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_videorecord_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="时长:10:00:00"
+                        android:textColor="@color/text_color"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_videorecord_again"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/selector_public_btn_bg_yellow"
+                        android:minWidth="80dp"
+                        android:text="重新录制"
+                        android:textColor="#ffffffff"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/img_videorecord" >
+
+                <EditText
+                    android:id="@+id/ed_videorecord_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/selector_public_form_color_middle"
+                    android:digits="1234567890"
+                    android:ems="10"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/text_value_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@+id/ed_videorecord_title"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="标题："
+                    android:textColor="@color/text_key_color" />
+
+                <View
+                    android:id="@+id/line1"
+                    style="@style/line"
+                    android:layout_below="@+id/ed_videorecord_title" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/ed_videorecord_title"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="总价："
+                    android:textColor="@color/text_key_color" />
+
+                <EditText
+                    android:id="@+id/ed_videorecord_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/line1"
+                    android:background="@drawable/selector_public_form_color_middle"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/text_value_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@+id/ed_videorecord_content"
+                    android:layout_below="@+id/line1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="简介："
+                    android:textColor="@color/text_key_color" />
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ed_videorecord_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/selector_public_btn_bg_yellow"
+                    android:text="完   成"
+                    android:textColor="#ffffffff" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

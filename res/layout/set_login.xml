@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/all_background" >
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo" />
+
+    <RelativeLayout
+        android:id="@+id/login_input_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_public_form_color_middle" >
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:text="@string/set_dl_yhm"
+            android:textColor="@color/text_key_color"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/set_login_username"
+            android:layout_width="fill_parent"
+            android:layout_height="46.0dip"
+            android:layout_toRightOf="@+id/tv_username"
+            android:background="@null"
+            android:hint="@string/set_dl_account_hint"
+            android:maxLength="11"
+            android:text="123"
+            android:textColor="@color/white"
+            android:textColorHint="@color/text_input_hint_color"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_below="@+id/tv_username"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_secret"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_alignRight="@+id/tv_username"
+            android:layout_below="@+id/view_line"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:text="@string/set_dl_mm"
+            android:textColor="@color/text_key_color"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/set_login_password"
+            android:layout_width="fill_parent"
+            android:layout_height="46.0dip"
+            android:layout_below="@+id/view_line"
+            android:layout_toRightOf="@+id/tv_username"
+            android:background="@null"
+            android:hint="@string/set_dl_account_pwd_hint"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:text="321"
+            android:textColor="@color/white"
+            android:textColorHint="@color/text_input_hint_color"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/login_button_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_input_layout"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <!-- android:background="@drawable/selector_view_set_dl_login_btn" -->
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_public_btn_bg_yellow"
+            android:text="登 录"
+            android:textColor="@color/text_btn_color"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_button_layout"
+        android:layout_below="@+id/login_button_layout"
+        android:background="@null"
+        android:text="忘记密码"
+        android:textColor="@color/text_color" />
+
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/login_button_layout"
+        android:layout_below="@+id/login_button_layout"
+        android:background="@null"
+        android:text="注册登录"
+        android:textColor="@color/text_color" />
+
+</RelativeLayout>
